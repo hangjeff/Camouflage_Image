@@ -8,7 +8,6 @@ import chardet
 class Text(tk.Frame):
     def __init__(self, parent, controller):
         super().__init__(parent)
-        self.controller = controller
         
         # Objects on the Frame
         label = tk.Label(self, text="Merge Image with Text")

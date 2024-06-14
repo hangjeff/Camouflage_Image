@@ -9,7 +9,7 @@ from zip import Zip
 class PageApp(tk.Tk):
     def __init__(self):
         super().__init__()
-        self.title("Python Merge Image and File")
+        self.title("Merge Image and File")
         self.geometry("350x200")
         
         # Container has a Frame to hold all pages
