@@ -4,6 +4,6 @@
 * Choose **Merge Image with Text file** to hide the file's encoding inside it
 
   **PS** You can using pyinstaller to create an executable file in Python
-  ```python
+  ```cmd
   pyinstaller main.py
   ```
