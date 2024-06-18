@@ -37,6 +37,7 @@ def merge_files():
         with open(text_path, 'rb') as text_file:
             text_data = text_file.read()
             result = chardet.detect(text_data)
+            print("Encoding:", result['encoding'])
         with open("new.png", 'wb') as output_file:
             output_file.write(img_data)
             output_file.write(text_data.decode(result['encoding']).encode('utf-8'))
@@ -54,9 +55,3 @@ def browse_file():
     global text_path
     text_path = filedialog.askopenfilename(filetypes=[("All files", "*.*")])
     print("File selected:", text_path)
-    
-def detect_encoding(text_path):
-    with open(text_path, 'rb') as f:
-        raw_data = f.read()
-        result = chardet.detect(raw_data)
-        return result['encoding']
