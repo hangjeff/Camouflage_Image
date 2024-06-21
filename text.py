@@ -24,7 +24,7 @@ class Text(tk.Frame):
         Btn_Merge.pack(pady=5)
         
         Btn_Back = tk.Button(self, text="Go to Home Page",
-                            command=lambda: controller.show_page("HomePage"),
+                            command=lambda: controller("HomePage"),
                             bg = "lightblue")
         Btn_Back.pack(pady=5)
 

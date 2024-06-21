@@ -20,7 +20,7 @@ class PageApp(tk.Tk):
         
         for Page in (HomePage, Zip, Text):
             page_name = Page.__name__
-            page = Page(parent = self.container, controller = self)
+            page = Page(parent = self.container, controller = self.show_page)
             self.pages[page_name] = page
             page.grid(row = 0, column = 0, sticky=  "nsew")
             
@@ -39,10 +39,10 @@ class HomePage(tk.Frame):
         label.pack(pady = 10, padx = 125)
         
         Btn_Zip = tk.Button(self, text = "Merge Image with Zip file",
-                            command = lambda: controller.show_page("Zip"))
+                            command = lambda: controller("Zip"))
         Btn_Zip.pack(padx=5, pady=5)
         Btn_Text = tk.Button(self, text = "Merge Image with Text file",
-                            command = lambda: controller.show_page("Text"))
+                            command = lambda: controller("Text"))
         Btn_Text.pack(padx=5, pady=5)            
 
 
