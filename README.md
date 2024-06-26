@@ -1,4 +1,4 @@
-# Merge File Into an Image
+# Steganography Image
 
 * Choose **Merge Image with Zip file** to hide the zip file inside a new image file
 * Choose **Merge Image with Text file** to hide the file's encoding inside it
