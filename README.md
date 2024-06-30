@@ -2,7 +2,7 @@
 
 ##Instruction
 Install the required package *chardet*
-```cmd
+```sh
 pip install chardet
 ```
 * Choose **Merge Image with Zip file** to hide the zip file inside a new image file
