@@ -1,7 +1,7 @@
 # Steganography Image
 
 ##Instruction
-Install the required package __chardet__
+Install the required package *chardet*
 ```cmd
 pip install chardet
 ```
