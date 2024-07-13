@@ -1,4 +1,4 @@
-# Steganography Image
+# Camouflage Image
 
 ##Instruction
 Install the required package *chardet*
