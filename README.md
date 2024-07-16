@@ -1,6 +1,6 @@
 # Camouflage Image
 
-##Instruction
+## Instruction
 Install the required package *chardet*
 ```sh
 pip install chardet
